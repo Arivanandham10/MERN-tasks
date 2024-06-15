@@ -30,7 +30,7 @@
         }
         p{
             padding-left: 50px;
-            padding-right: 20%;
+            padding-right: 30%;
             padding-top: 5px;
         }
         .nav{
@@ -42,17 +42,31 @@
         .navitem:hover{
             color: rgb(255, 191, 0);
         }
-        /* img{
-            width: 1480px;
+        .img {
+            background-image: url('bgi.jpeg');
+            background-repeat: no-repeat;
+            position: relative;
+            width: 1455px;
             height: 500px;
-            opacity: 40%;
-        } */
-        .img{
-            background-image: url(bgi.jpeg);
             background-size: 1480px 500px;
-            width: 1480px;
-            height: 500px;
-            opacity: 40%;
+            opacity: 0.8;
+        }
+        .img::before {
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .img div {
+            text-align: center;
+            padding-top: 100px;
+            padding-left: 20% ;
+            color: white;
+            font-size: 50px;
+        }
+        .cardimg{
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            margin-left: 25px;
         }
     </style>
 </head>
@@ -80,6 +94,45 @@
         <div>
             <p>We Are Professional</p>
             <p><b><b>For Your Dream Project</b></b></p>
+            <p><button class="btn" style="background-color: transparent; color: white; border: 2px solid white; width: 200px; height: 50px; font-size:xx-small;">GET A QUOTE</button></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 110%;">
+                <div class="card-body d-flex" style="background-color: rgb(25, 25, 65);">
+                    <div>
+                        <img class="cardimg" src="card1.png">
+                    </div>
+                    <div>
+                        <p class="text-warning"><b>Expert worker</b><br><p class="text-warning">Experienced and dedicated workers and expert workers to delivering top-quality and craftsmanship on every project</p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 110%;">
+                <div class="card-body bg-warning d-flex">
+                    <div>
+                        <img class="cardimg" src="card2.png">
+                    </div>
+                    <div>
+                        <p style="color:rgb(25, 25, 65);"><b>Quality work</b><br><p style="color:rgb(25, 25, 65);">Delivering excellence in every build, we transform visions into reality with precision and expertise</p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 100%;">
+                <div class="card-body d-flex" style="background-color: rgb(25, 25, 65);">
+                    <div>
+                        <img class="cardimg" src="wrk.png">
+                    </div>
+                    <div>
+                        <p class="text-warning"><b>24/7 Support</b><br><p class="text-warning">We're here for you 24/7 to support Reach out anytime, day or night, for expert builder assistance!</p></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
